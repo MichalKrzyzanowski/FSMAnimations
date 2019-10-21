@@ -54,9 +54,17 @@ int main()
 				{
 					input.setCurrent(Input::Action::RIGHT);
 				}
-				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::LShift))
 				{
-					input.setCurrent(Input::Action::UP);
+					input.setCurrent(Input::Action::SPRINT);
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+				{
+					input.setCurrent(Input::Action::CROUCH);
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::LControl))
+				{
+					input.setCurrent(Input::Action::BLOCK);
 				}
 				break;
 			default:

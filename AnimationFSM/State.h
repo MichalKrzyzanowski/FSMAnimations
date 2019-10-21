@@ -19,13 +19,25 @@ public:
 	{
 		DEBUG_MSG("State::Idling");
 	}
-	virtual void jumping(PlayerFSM* a)
+	virtual void moving(PlayerFSM* a)
 	{
-		DEBUG_MSG("State::Jumping");
+		DEBUG_MSG("State::moving");
 	}
-	virtual void climbing(PlayerFSM* a)
+	virtual void sprinting(PlayerFSM* a)
 	{
-		DEBUG_MSG("State::Climbing");
+		DEBUG_MSG("State::sprinting");
+	}
+	virtual void crouching(PlayerFSM* a)
+	{
+		DEBUG_MSG("State::crouching");
+	}
+	virtual void prone(PlayerFSM* a)
+	{
+		DEBUG_MSG("State::prone");
+	}
+	virtual void blocking(PlayerFSM* a)
+	{
+		DEBUG_MSG("State::blocking");
 	}
 };
 

@@ -11,7 +11,11 @@ public:
 		IDLE,
 		UP,
 		LEFT,
-		RIGHT
+		RIGHT,
+		CROUCH,
+		PRONE,
+		SPRINT,
+		BLOCK
 	};
 
 	void setCurrent(Action);

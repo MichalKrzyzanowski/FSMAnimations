@@ -48,13 +48,7 @@
     <ClInclude Include="AnimatedSprite.h">
       <Filter>Header Files\Animation</Filter>
     </ClInclude>
-    <ClInclude Include="Climbing.h">
-      <Filter>Header Files\FSM</Filter>
-    </ClInclude>
     <ClInclude Include="Idle.h">
-      <Filter>Header Files\FSM</Filter>
-    </ClInclude>
-    <ClInclude Include="Jumping.h">
       <Filter>Header Files\FSM</Filter>
     </ClInclude>
     <ClInclude Include="State.h">
@@ -72,13 +66,25 @@
     <ClInclude Include="PlayerFSM.h">
       <Filter>Header Files\FSM</Filter>
     </ClInclude>
+    <ClInclude Include="Sprinting.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Moving.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Crouching.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Blocking.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Prone.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Climbing.cpp">
-      <Filter>Source Files\FSM</Filter>
     </ClCompile>
     <ClCompile Include="Idle.cpp">
       <Filter>Source Files\FSM</Filter>
@@ -89,13 +95,25 @@
     <ClCompile Include="AnimatedSprite.cpp">
       <Filter>Source Files\Animation</Filter>
     </ClCompile>
-    <ClCompile Include="Jumping.cpp">
-      <Filter>Source Files\FSM</Filter>
-    </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>Source Files\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="PlayerMachine.cpp">
+      <Filter>Source Files\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprinting.cpp">
+      <Filter>Source Files\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Moving.cpp">
+      <Filter>Source Files\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Crouching.cpp">
+      <Filter>Source Files\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Blocking.cpp">
+      <Filter>Source Files\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Prone.cpp">
       <Filter>Source Files\FSM</Filter>
     </ClCompile>
   </ItemGroup>

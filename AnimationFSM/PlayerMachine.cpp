@@ -33,12 +33,27 @@ void PlayerFSM::idle()
 	m_current->idle(this);
 }
 
-void PlayerFSM::jumping()
+void PlayerFSM::moving()
 {
-	m_current->jumping(this);
+	m_current->moving(this);
 }
 
-void PlayerFSM::climbing()
+void PlayerFSM::sprinting()
 {
-	m_current->climbing(this);
+	m_current->sprinting(this);
+}
+
+void PlayerFSM::blocking()
+{
+	m_current->blocking(this);
+}
+
+void PlayerFSM::crouching()
+{
+	m_current->crouching(this);
+}
+
+void PlayerFSM::prone()
+{
+	m_current->prone(this);
 }

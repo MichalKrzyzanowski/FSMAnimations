@@ -20,22 +20,28 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimatedSprite.h" />
+    <ClInclude Include="Blocking.h" />
+    <ClInclude Include="Crouching.h" />
     <ClInclude Include="PlayerFSM.h" />
-    <ClInclude Include="Climbing.h" />
+    <ClInclude Include="Prone.h" />
+    <ClInclude Include="Sprinting.h" />
     <ClInclude Include="Debug.h" />
     <ClInclude Include="Idle.h" />
     <ClInclude Include="Input.h" />
-    <ClInclude Include="Jumping.h" />
+    <ClInclude Include="Moving.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="State.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedSprite.cpp" />
+    <ClCompile Include="Blocking.cpp" />
+    <ClCompile Include="Crouching.cpp" />
     <ClCompile Include="PlayerMachine.cpp" />
-    <ClCompile Include="Climbing.cpp" />
+    <ClCompile Include="Prone.cpp" />
+    <ClCompile Include="Sprinting.cpp" />
     <ClCompile Include="Idle.cpp" />
     <ClCompile Include="Input.cpp" />
-    <ClCompile Include="Jumping.cpp" />
+    <ClCompile Include="Moving.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
   </ItemGroup>
@@ -46,32 +52,32 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{1BC25414-4B13-438A-9D4F-B4D6C048AB52}</ProjectGuid>
     <RootNamespace>AnimationFSM</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>

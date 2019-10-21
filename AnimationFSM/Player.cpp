@@ -34,17 +34,25 @@ void Player::handleInput(Input in)
 		//std::cout << "Player Idling" << std::endl;
 		m_state.idle();
 		break;
-	case Input::Action::UP:
+	case Input::Action::SPRINT:
 		//std::cout << "Player Up" << std::endl;
-		m_state.climbing();
+		m_state.sprinting();
 		break;
 	case Input::Action::LEFT:
 		//std::cout << "Player Left" << std::endl;
-		m_state.jumping();
+		m_state.moving();
 		break;
 	case Input::Action::RIGHT:
 		//std::cout << "Player Idling" << std::endl;
-		m_state.jumping();
+		m_state.moving();
+		break;
+	case Input::Action::CROUCH:
+		//std::cout << "Player Idling" << std::endl;
+		m_state.crouching();
+		break;
+	case Input::Action::BLOCK:
+		//std::cout << "Player Idling" << std::endl;
+		m_state.blocking();
 		break;
 	default:
 		break;

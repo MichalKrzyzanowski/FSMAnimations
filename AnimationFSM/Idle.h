@@ -10,8 +10,11 @@ public:
 	~Idle() {};
 	void handleInput();
 	void update();
-	void jumping(PlayerFSM* a);
-	void climbing(PlayerFSM* a);
+	void moving(PlayerFSM* a);
+	void sprinting(PlayerFSM* a);
+	void crouching(PlayerFSM* a);
+	void blocking(PlayerFSM* a);
+	void prone(PlayerFSM* a);
 };
 
 #endif // !IDLE_H
