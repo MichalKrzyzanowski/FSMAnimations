@@ -66,6 +66,10 @@ int main()
 				{
 					input.setCurrent(Input::Action::BLOCK);
 				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::LAlt))
+				{
+					input.setCurrent(Input::Action::PRONE);
+				}
 				break;
 			default:
 				input.setCurrent(Input::Action::IDLE);

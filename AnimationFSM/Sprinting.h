@@ -10,7 +10,7 @@ public:
 	Sprinting() {};
 	~Sprinting() {};
 	void idle(PlayerFSM* a);
-	void moving(PlayerFSM* a);
+	//void moving(PlayerFSM* a);
 };
 
 #endif // !IDLE_H

@@ -54,6 +54,10 @@ void Player::handleInput(Input in)
 		//std::cout << "Player Idling" << std::endl;
 		m_state.blocking();
 		break;
+	case Input::Action::PRONE:
+		//std::cout << "Player Idling" << std::endl;
+		m_state.prone();
+		break;
 	default:
 		break;
 	}
