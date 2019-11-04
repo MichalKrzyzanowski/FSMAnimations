@@ -10,6 +10,7 @@ public:
 	Crouching() {};
 	~Crouching() {};
 	void idle(PlayerFSM* a);
+	void prone(PlayerFSM* a);
 };
 
 #endif // !IDLE_H

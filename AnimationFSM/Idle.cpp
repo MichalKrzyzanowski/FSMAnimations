@@ -41,6 +41,6 @@ void Idle::blocking(PlayerFSM* a)
 void Idle::prone(PlayerFSM* a)
 {
 	std::cout << "Idle -> Prone" << std::endl;
-	a->setCurrent(new Blocking());
+	a->setCurrent(new Prone());
 	delete this;
 }

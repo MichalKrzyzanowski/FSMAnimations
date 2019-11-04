@@ -10,6 +10,7 @@ void Sprinting::idle(PlayerFSM* a)
 	a->setCurrent(new Idle());
 	delete this;
 }
+
 //void Sprinting::moving(PlayerFSM* a)
 //{
 //	std::cout << "Sprinting -> Moving" << std::endl;
