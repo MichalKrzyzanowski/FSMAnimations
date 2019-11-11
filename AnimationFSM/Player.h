@@ -18,6 +18,7 @@ public:
 	AnimatedSprite& getAnimatedSprite();
 	void handleInput(Input);
 	void update();
+	void changeAnim(AnimatedSprite & t_animation);
 };
 
 #endif // !PLAYER_H

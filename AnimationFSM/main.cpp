@@ -19,10 +19,11 @@ int main()
 		return EXIT_FAILURE;
 	}
 
+
 	// Setup Players Default Animated Sprite
 	AnimatedSprite idle(texture);
 	idle.addFrame(sf::IntRect(3, 3, 84, 84));
-	idle.addFrame(sf::IntRect(88, 2, 84, 84));
+	idle.addFrame(sf::IntRect(88, 3, 84, 84));
 	idle.addFrame(sf::IntRect(173, 3, 84, 84));
 	idle.addFrame(sf::IntRect(258, 3, 84, 84));
 	idle.addFrame(sf::IntRect(343, 3, 84, 84));
@@ -89,30 +90,37 @@ int main()
 			case sf::Event::KeyPressed:
 				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 				{
+					player.changeAnim(walk);
 					input.setCurrent(Input::Action::LEFT);
 				}
 				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 				{
+					player.changeAnim(walk);
 					input.setCurrent(Input::Action::RIGHT);
 				}
 				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::LShift))
 				{
+					player.changeAnim(sprint);
 					input.setCurrent(Input::Action::SPRINT);
 				}
 				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
 				{
+					player.changeAnim(crouch);
 					input.setCurrent(Input::Action::CROUCH);
 				}
 				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::LControl))
 				{
+					player.changeAnim(block);
 					input.setCurrent(Input::Action::BLOCK);
 				}
 				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::LAlt))
 				{
+					player.changeAnim(prone);
 					input.setCurrent(Input::Action::PRONE);
 				}
 				break;
 			default:
+				player.changeAnim(idle);
 				input.setCurrent(Input::Action::IDLE);
 				break;
 			}
