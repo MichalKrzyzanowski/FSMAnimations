@@ -43,6 +43,9 @@
     <Filter Include="Source Files\Readme">
       <UniqueIdentifier>{1bc46bdb-7446-4df6-9ccb-727da7603796}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Assets">
+      <UniqueIdentifier>{9c960a16-855a-4f5f-b630-fddbdf0e7716}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimatedSprite.h">
@@ -121,5 +124,10 @@
     <None Include="..\README.md">
       <Filter>Source Files\Readme</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\grid.png">
+      <Filter>Resource Files\Assets</Filter>
+    </Image>
   </ItemGroup>
 </Project>

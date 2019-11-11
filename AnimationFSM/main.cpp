@@ -20,16 +20,57 @@ int main()
 	}
 
 	// Setup Players Default Animated Sprite
-	AnimatedSprite animated_sprite(texture);
-	animated_sprite.addFrame(sf::IntRect(3, 3, 84, 84));
-	animated_sprite.addFrame(sf::IntRect(88, 3, 84, 84));
-	animated_sprite.addFrame(sf::IntRect(173, 3, 84, 84));
-	animated_sprite.addFrame(sf::IntRect(258, 3, 84, 84));
-	animated_sprite.addFrame(sf::IntRect(343, 3, 84, 84));
-	animated_sprite.addFrame(sf::IntRect(428, 3, 84, 84));
+	AnimatedSprite idle(texture);
+	idle.addFrame(sf::IntRect(3, 3, 84, 84));
+	idle.addFrame(sf::IntRect(88, 2, 84, 84));
+	idle.addFrame(sf::IntRect(173, 3, 84, 84));
+	idle.addFrame(sf::IntRect(258, 3, 84, 84));
+	idle.addFrame(sf::IntRect(343, 3, 84, 84));
+	idle.addFrame(sf::IntRect(428, 3, 84, 84));
+
+	AnimatedSprite walk(texture);
+	walk.addFrame(sf::IntRect(3, 88, 84, 84));
+	walk.addFrame(sf::IntRect(88, 88, 84, 84));
+	walk.addFrame(sf::IntRect(173, 88, 84, 84));
+	walk.addFrame(sf::IntRect(258, 88, 84, 84));
+	walk.addFrame(sf::IntRect(343, 88, 84, 84));
+	walk.addFrame(sf::IntRect(428, 88, 84, 84));
+
+	AnimatedSprite sprint(texture);
+	sprint.addFrame(sf::IntRect(3, 173, 84, 84));
+	sprint.addFrame(sf::IntRect(88, 173, 84, 84));
+	sprint.addFrame(sf::IntRect(173, 173, 84, 84));
+	sprint.addFrame(sf::IntRect(258, 173, 84, 84));
+	sprint.addFrame(sf::IntRect(343, 173, 84, 84));
+	sprint.addFrame(sf::IntRect(428, 173, 84, 84));
+
+	AnimatedSprite crouch(texture);
+	crouch.addFrame(sf::IntRect(3, 258, 84, 84));
+	crouch.addFrame(sf::IntRect(88, 258, 84, 84));
+	crouch.addFrame(sf::IntRect(173, 258, 84, 84));
+	crouch.addFrame(sf::IntRect(258, 258, 84, 84));
+	crouch.addFrame(sf::IntRect(343, 258, 84, 84));
+	crouch.addFrame(sf::IntRect(428, 258, 84, 84));
+
+
+	AnimatedSprite block(texture);
+	block.addFrame(sf::IntRect(3, 343, 84, 84));
+	block.addFrame(sf::IntRect(88, 343, 84, 84));
+	block.addFrame(sf::IntRect(173, 343, 84, 84));
+	block.addFrame(sf::IntRect(258, 343, 84, 84));
+	block.addFrame(sf::IntRect(343, 343, 84, 84));
+	block.addFrame(sf::IntRect(428, 343, 84, 84));
+
+	AnimatedSprite prone(texture);
+	prone.addFrame(sf::IntRect(3, 428, 84, 84));
+	prone.addFrame(sf::IntRect(88, 428, 84, 84));
+	prone.addFrame(sf::IntRect(173, 428, 84, 84));
+	prone.addFrame(sf::IntRect(258, 428, 84, 84));
+	prone.addFrame(sf::IntRect(343, 428, 84, 84));
+	prone.addFrame(sf::IntRect(428, 428, 84, 84));
 
 	// Setup the Player
-	Player player(animated_sprite);
+	Player player(idle);
 	Input input;
 	
 	// Start the game loop
